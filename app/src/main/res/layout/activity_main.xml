@@ -7,8 +7,9 @@
     <include
         layout="@layout/toolbar"
         />
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!!!!~" />
+        android:text="Child Activity"
+        android:onClick="goChildActivity"/>
 </LinearLayout>
