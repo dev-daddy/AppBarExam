@@ -88,6 +88,7 @@ public class ChildActivity extends AppCompatActivity{
     private void initShareActionProvider(Menu menu) {
         MenuItem shareItem = menu.findItem(R.id.action_share);
         ShareActionProvider shareActionProvider = (ShareActionProvider)MenuItemCompat.getActionProvider(shareItem);
+        shareActionProvider.getContext().setTheme(R.style.ShareActionProviderTheme);
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
 //        shareIntent.setType("image/*");
